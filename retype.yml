@@ -5,7 +5,14 @@ branding:
   logo: logos/logo-blue.png
   label: Documentation
 links:
-  - text: Getting Started
-    link: https://retype.com/guides/getting-started/
+  - text: GitHub
+    icon: github
+    link: https://github.com/NexaLinux/
+  - text: Patreon
+    icon: patreon
+    link: https://patreon.com/NexaLinux/
+  - text: Website
+    icon: globe
+    link: https://nexa.is-a.dev/
 footer:
   copyright: "&copy; Copyright Nexa Linux 2025. All rights reserved."

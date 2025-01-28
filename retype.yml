@@ -1,0 +1,11 @@
+input: .
+output: .retype
+url: https://nexalinux.github.io/docs/
+branding:
+  title: Nexa Linux
+  label: Docs
+links:
+  - text: Getting Started
+    link: https://retype.com/guides/getting-started/
+footer:
+  copyright: "&copy; Copyright Nexa Linux 2025. All rights reserved."

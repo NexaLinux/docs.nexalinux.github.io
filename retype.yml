@@ -2,7 +2,7 @@ input: .
 output: .retype
 url: https://nexalinux.github.io/docs/
 branding:
-  logo: https://raw.githubusercontent.com/NexaLinux/.github/refs/heads/main/logos/logo-blue.png
+  logo: logos/logo-blue.png
   label: Documentation
 links:
   - text: Getting Started

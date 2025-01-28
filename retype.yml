@@ -6,13 +6,10 @@ branding:
   label: Documentation
 links:
   - text: GitHub
-    icon: github
     link: https://github.com/NexaLinux/
   - text: Patreon
-    icon: patreon
     link: https://patreon.com/NexaLinux/
   - text: Website
-    icon: globe
     link: https://nexa.is-a.dev/
 footer:
   copyright: "&copy; Copyright Nexa Linux 2025. All rights reserved."

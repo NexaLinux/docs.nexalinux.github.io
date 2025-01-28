@@ -6,11 +6,17 @@ branding:
   logo: logos/logo-blue.png
   label: Documentation
 links:
+  - text: Home
+    link: index.md
+    icon: home
   - text: GitHub
+    icon: mark-github
     link: https://github.com/NexaLinux/
   - text: Patreon
+    icon: heart
     link: https://patreon.com/NexaLinux/
   - text: Website
+    icon: globe
     link: https://nexa.is-a.dev/
 edit:
   repo: "https://github.com/NexaLinux/docs"

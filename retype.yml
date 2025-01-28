@@ -1,6 +1,7 @@
 input: .
 output: .retype
 url: https://nexalinux.github.io/docs/
+favicon: logos/logo-blue.png
 branding:
   logo: logos/logo-blue.png
   label: Documentation

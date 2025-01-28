@@ -12,5 +12,11 @@ links:
     link: https://patreon.com/NexaLinux/
   - text: Website
     link: https://nexa.is-a.dev/
+edit:
+  repo: "https://github.com/NexaLinux/docs"
+  branch: "main"
+  label: "Edit this page"
+editor:
+  enabled: true
 footer:
   copyright: "&copy; Copyright Nexa Linux 2025. All rights reserved."

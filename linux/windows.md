@@ -5,9 +5,7 @@ icon: device-desktop
 This is very, VERY unexpected to be found on a documentation page for a Linux distro, but
 # Please, for the love of god, stop using Windows.
 
-❓ Did you know: Microsoft is printing money from you using their OS?
-
-You may say, "that's not bad!", but, the way they do it is SPYING on you.
+❓ Did you know: Microsoft can spy on everything you do while using their OS?
 
 Lately, a lot of people have been switching to distros like Ubuntu (I, the writer, don't like Ubuntu, but it's still better than Windows) for this particular reason.
 

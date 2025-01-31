@@ -10,7 +10,7 @@ icon: flame
 Here, at Nexa Linux, we want to keep the nice system requirements of Arch Linux. It's not exactly the same, but it's similar. Here are the minimal and recommended system requirements:
 
 ## Minimal system requirements
-RAM: 2 Gigabytes
+RAM: 1 Gigabyte
 <br>
 CPU: Any x86_64 CPU
 

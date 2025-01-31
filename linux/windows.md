@@ -2,8 +2,8 @@
 label: Stop using Windows!
 icon: device-desktop
 ---
-This is very, VERY unexpected to be found on a documentation page for a Linux distro, but
 # Please, for the love of god, stop using Windows.
+This is very, VERY unexpected to be found on a documentation page for a Linux distro, but:
 
 ❓ Did you know: Microsoft can spy on everything you do while using their OS?
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nexalinux.github.io/docs/sitemap.xml.gz
+Sitemap: https://docs.nexalinux.xyz/sitemap.xml.gz

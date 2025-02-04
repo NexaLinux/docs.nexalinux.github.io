@@ -4,7 +4,8 @@ url: docs.nexalinux.xyz
 favicon: logos/logo-blue.png
 branding:
   logo: logos/logo-blue.png
-  label: Documentation
+  title: Nexa Linux
+  label: Docs
 links:
   - text: Home
     link: index.md

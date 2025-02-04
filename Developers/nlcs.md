@@ -21,7 +21,7 @@ For the script to work, you need to be running it in a [TTY](<https://en.wikiped
 
 ### Download and run
 
-To use NSLS, first you need to install `wget`:
+To use NLCS, first you need to install `wget`:
 
 ```bash
 sudo pacman -S wget

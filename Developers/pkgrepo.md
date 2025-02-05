@@ -9,7 +9,7 @@ For easier installation, we made our own package repository that contains tools 
 
 You can use the repository, using `pacman` or `nexa apt` (included in [nexa-cmd](https://github.com/NexaLinux/nexa-cmd)).
 
-### Editing our pacman.conf
+### Editing your pacman.conf
 
 !!!info
 If you use Nexa Linux, you do not need to do this.

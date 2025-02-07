@@ -7,6 +7,7 @@ Heavy packaging of Nexa Linux can be difficult, which is why we made our own ISO
 
 !!!success Penguins' eggs
 We use Penguins' eggs for packaging Nexa Linux. Huge thanks to the developer, [Piero Proietti](https://github.com/pieroproietti), for developing this awesome project.
+!!!
 
 !!!danger Critical warning
 The ISO creator script is used for development ONLY. It captures EVERYTHING you have on your system and puts it into an ISO. Please, do NOT run this on your main PC and redistribute the ISO.

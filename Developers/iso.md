@@ -9,8 +9,8 @@ Heavy packaging of Nexa Linux can be difficult, which is why we made our own ISO
 We use Penguins' eggs for packaging Nexa Linux. Huge thanks to the developer, [Piero Proietti](https://github.com/pieroproietti), for developing this awesome project.
 !!!
 
-!!!danger Critical warning
-The ISO creator script is used for development ONLY. Please, do NOT run this on your main PC and redistribute the ISO.
+!!!danger Development only
+The ISO creator script is used for development ONLY. Please, do __NOT__ run this on your main PC.
 !!!
 
 First, start off with a clean Arch Linux [VM](https://en.wikipedia.org/wiki/Virtual_machine). No desktop enviroment, no users. Use the root user. You can set any password for `root` you like, it will be removed later.

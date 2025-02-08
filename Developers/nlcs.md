@@ -36,7 +36,7 @@ wget nexalinux.github.io/scripts/nlcs.sh
 Then for the script to actually work, we need to make it executable:
 
 ```bash
-chmod a+x arch-to-nexa.sh
+chmod a+x nlcs.sh
 ```
 
 !!!warning
@@ -46,7 +46,7 @@ The creators of this script are not responsible for any damages caused to your P
 And finally, execute it:
 
 ```bash
-./arch-to-nexa.sh
+./nlcs.sh
 ```
 
 !!!info

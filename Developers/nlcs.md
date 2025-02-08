@@ -30,7 +30,7 @@ sudo pacman -S wget
 After that, you need to download the script:
 
 ```bash
-wget nexalinux.github.io/scripts/arch-to-nexa.sh
+wget nexalinux.github.io/scripts/nlcs.sh
 ```
 
 Then for the script to actually work, we need to make it executable:

@@ -64,6 +64,10 @@ Read the previous danger warning I put.
 /tmp/nexa-prod/iso.sh
 ```
 
+!!!info Info
+When Penguins' eggs tells you to edit /etc/sudoers, find the commented line that enables any user in the group %wheel to run sudo commands and uncomment it. Then press CTRL + S to save and CTRL + X to exit.
+!!!
+
 And now, grab the ISO in /home/eggs and you're done!
 
 !!!info Info

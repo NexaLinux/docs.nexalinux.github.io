@@ -31,7 +31,7 @@ There is a very high chance Penguins' eggs uses nano for editing `/etc/sudoers`,
 After installing the packages, download the necessary scripts:
 
 ```bash
-wget https://nexalinux.github.io/scripts/arch-to-nexa.sh -O /tmp/nexa-prod/arch-to-nexa.sh
+wget https://nexalinux.github.io/scripts/arch-to-nexa.sh -O /tmp/nexa-prod/nlcs.sh
 wget https://nexalinux.github.io/scripts/iso.sh -O /tmp/nexa-prod/iso.sh
 ```
 
@@ -47,14 +47,14 @@ Make the scripts executable:
 chmod +x /tmp/nexa-prod/*
 ```
 
-And now, execute `arch-to-nexa.sh` ([NLCS](https://docs.nexalinux.xyz/developers/nlcs/)):
+And now, execute `nlcs.sh` ([NLCS](https://docs.nexalinux.xyz/developers/nlcs/)):
 
 !!!danger Danger ahead!
 Like mentioned before, please, do __NOT__ execute the script on your main PC. If you do, don't even try making an issue, as that's 100% your fault.
 !!!
 
 ```bash
-/tmp/nexa-prod/arch-to-nexa.sh
+/tmp/nexa-prod/nlcs.sh
 ```
 
 After that's done, immediately run the ISO creator:

@@ -56,10 +56,6 @@ Like mentioned before, please, do __NOT__ execute the script on your main PC. If
 
 After that's done, immediately run the ISO creator:
 
-!!!danger Danger ahead!
-Read the previous danger warning I put.
-!!!
-
 ```bash
 /tmp/nexa-prod/iso.sh
 ```

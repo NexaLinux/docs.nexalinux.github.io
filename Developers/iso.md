@@ -17,7 +17,7 @@ First, start off with a clean Arch Linux [VM](https://en.wikipedia.org/wiki/Virt
 
 !!!info
 You can also use a [TTY](https://en.wikipedia.org/wiki/Tty_(Unix)). Just press `CTRL + ALT + F5` and log in.
-
+!!!
 Once you're in, install `wget` and `nano`.
 
 ```bash

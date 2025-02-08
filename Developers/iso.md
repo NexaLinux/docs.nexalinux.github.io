@@ -31,7 +31,7 @@ There is a very high chance Penguins' eggs uses nano for editing `/etc/sudoers`,
 After installing the packages, download the necessary scripts:
 
 ```bash
-wget https://nexalinux.github.io/scripts/arch-to-nexa.sh -O /tmp/nexa-prod/nlcs.sh
+wget https://nexalinux.github.io/scripts/nlcs.sh -O /tmp/nexa-prod/nlcs.sh
 wget https://nexalinux.github.io/scripts/iso.sh -O /tmp/nexa-prod/iso.sh
 ```
 

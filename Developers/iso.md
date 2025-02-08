@@ -44,7 +44,7 @@ Make the scripts executable:
 chmod +x /tmp/nexa-prod/*
 ```
 
-And now, execute arch-to-nexa.sh:
+And now, execute arch-to-nexa.sh ([NLCS](https://docs.nexalinux.xyz/developers/nlcs/)):
 
 !!!danger Danger ahead!
 Like mentioned before, please, do __NOT__ execute the script on your main PC. If you do, don't even try making an issue, as that's 100% your fault.

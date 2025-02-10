@@ -11,4 +11,4 @@ Nexa Linux is a Lightning Fast, User Friendly and Community Driven distribution,
 
 If you wanna learn some stuff about our distribution, feel free to browse the pages on this documentation!
 
-[!button variant="primary" text="Download"](https://nexalinux.org/download)
+[!button variant="primary" text="Download"](https://nexalinux.xyz/download)

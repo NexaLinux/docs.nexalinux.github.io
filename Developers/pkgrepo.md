@@ -29,6 +29,12 @@ SigLevel = Optional TrustAll
 Server = https://packages.nexalinux.xyz
 ```
 
-Finally, you can press `CTRL + X` then `Y` and enter. Restart your terminal. <br>
+You can now press `CTRL + X` then `Y` and enter.
+
+After that's done, update your package repositories:
+
+```bash
+sudo pacman -Sy
+```
 
 ### You can install packages using `sudo pacman -S [package]`.

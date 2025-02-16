@@ -26,7 +26,7 @@ Then, scroll until you see the repositories (`core`,`extra` and etc.) and add th
 ```
 [nexa-pkg]
 SigLevel = Optional TrustAll
-Server = http://packages.nexalinux.xyz
+Server = https://packages.nexalinux.xyz
 ```
 
 Finally, you can press `CTRL + X` then `Y` and enter. Restart your terminal. <br>

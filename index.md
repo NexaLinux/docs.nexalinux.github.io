@@ -7,7 +7,7 @@ icon: home
 
 # Welcome to Nexa Linux!
 
-Nexa Linux is a lightning Fast, user friendly and community driven distribution, based on Ubuntu, made for beginners, switching from Windows or experts.
+Nexa Linux is a lightning fast, user friendly and community driven distribution, based on Ubuntu, made for beginners, switching from Windows or experts.
 
 If you wanna learn some stuff about our distribution, feel free to browse the pages on this documentation!
 

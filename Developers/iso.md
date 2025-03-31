@@ -1,6 +1,7 @@
 ---
 label: Creating an ISO
 icon: file-zip
+order: -3
 ---
 
 Heavy packaging of Nexa Linux can be difficult, which is why we made our own ISO packaging script.
@@ -10,13 +11,13 @@ We use Penguins' eggs for packaging Nexa Linux. Huge thanks to the developer, [P
 !!!
 
 !!!danger Development only
-The ISO creator script is used for development ONLY. Please, do __NOT__ run this on your main PC.
+The ISO creator script is used for development ONLY. Please, do **NOT** run this on your main PC.
 !!!
 
 First, start off with a clean Arch Linux [VM](https://en.wikipedia.org/wiki/Virtual_machine). No desktop enviroment, no users. Use the root user. You can set any password for `root` you like, it will be removed later.
 
 !!!info
-You can also use a [TTY](https://en.wikipedia.org/wiki/Tty_(Unix)). Just press `CTRL + ALT + F5` and log in.
+You can also use a [TTY](<https://en.wikipedia.org/wiki/Tty_(Unix)>). Just press `CTRL + ALT + F5` and log in.
 !!!
 Once you're in, install `wget` and `nano`.
 
@@ -51,7 +52,7 @@ chmod +x /tmp/nexa-prod/*
 And now, execute `nlcs.sh` ([NLCS](https://docs.nexalinux.xyz/developers/nlcs/)):
 
 !!!danger Danger ahead!
-Like mentioned before, please, do __NOT__ execute the script on your main PC. If you do, don't even try making an issue, as that's 100% your fault.
+Like mentioned before, please, do **NOT** execute the script on your main PC. If you do, don't even try making an issue, as that's 100% your fault.
 !!!
 
 ```bash

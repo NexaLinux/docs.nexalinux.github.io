@@ -10,15 +10,15 @@ links:
   - text: Home
     link: index.md
     icon: home
+  - text: Website
+    icon: globe
+    link: https://nexalinux.xyz
   - text: GitHub
     icon: mark-github
     link: https://github.com/NexaLinux/
   - text: Patreon
     icon: heart
     link: https://patreon.com/NexaLinux/
-  - text: Website
-    icon: globe
-    link: https://nexalinux.xyz
 edit:
   repo: "https://github.com/NexaLinux/docs"
   branch: "main"

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.796750612999">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.796750973992">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -31,12 +31,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../logos/logo-blue.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.6.0.796750612999" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.796750973992" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.796750612999" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.796750973992" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.796750612999" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.796750612999" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.796750973992" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.796750973992" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -251,6 +251,24 @@
 </doc-anchor-target>
 <p>Heavy packaging of Nexa Linux can be difficult, which is why we made our own ISO packaging script.</p>
 <div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-gray-600 dark:bg-dark-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert text-gray-300 bg-gray-900 border-gray-900 dark:bg-white dark:border-dark-600 dark:text-dark-700 doc-alert-contrast" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-gray-300 dark:text-dark-700" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>DO NOT USE!</h5>
+<p>At this time, Nexa Linux is being rebased to Ubuntu, and the scripts most likely don&#x27;t work!</p>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
         <div class="flex items-center ml-4 h-7">
@@ -284,7 +302,8 @@
         </div>
     </div>
 </div>
-<p>First, start off with a clean Arch Linux <a href="https://en.wikipedia.org/wiki/Virtual_machine">VM</a>. No desktop enviroment, no users. Use the root user. You can set any password for <code v-pre>root</code> you like, it will be removed later.</p>
+<p>First, start off with a clean Ubuntu <a href="https://en.wikipedia.org/wiki/Virtual_machine">VM</a>.</p>
+<p>Set a password for the root password with <code v-pre>sudo passwd root</code> (it will be removed later).</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -298,13 +317,18 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>You can also use a <a href="https://en.wikipedia.org/wiki/Tty_(Unix)">TTY</a>. Just press <code v-pre>CTRL + ALT + F5</code> and log in.</p>
+<p>You have to use a <a href="https://en.wikipedia.org/wiki/Tty_(Unix)">TTY</a>. Just press <code v-pre>CTRL + ALT + F5</code> and log in as the root user.</p>
         </div>
     </div>
 </div>
-<p>Once you&#x27;re in, install <code v-pre>wget</code> and <code v-pre>nano</code>.</p>
+<p>Once you&#x27;re in, clean up after the user that you had to make while installing:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">sudo pacman -S nano wget</code></pre>
+<pre class="language-bash"><code v-pre class="language-bash">userdel YOUR_USERNAME
+rm -rf /home/YOUR_USERNAME</code></pre>
+</doc-codeblock></div>
+<p>Then, install <code v-pre>wget</code>, <code v-pre>nano</code> and <code v-pre>python3</code>:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">sudo apt install -y nano wget</code></pre>
 </doc-codeblock></div>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
@@ -319,15 +343,15 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Warning</h5>
-<p>There is a very high chance Penguins&#x27; eggs uses nano for editing <code v-pre>/etc/sudoers</code>, and we will be doing that, so don&#x27;t try replacing it with a different editor (e.g Neovim.)</p>
+<p>Penguins&#x27; eggs uses nano for editing <code v-pre>/etc/sudoers</code>, and we will be doing that, so don&#x27;t try replacing it with a different editor (e.g Neovim.)</p>
         </div>
     </div>
 </div>
 <p>After installing the packages, download the necessary scripts:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-bash"><code v-pre class="language-bash">mkdir /tmp/nexa-prod/
-wget https://nexalinux.github.io/scripts/nlcs.sh -O /tmp/nexa-prod/nlcs.sh
-wget https://nexalinux.github.io/scripts/iso.sh -O /tmp/nexa-prod/iso.sh</code></pre>
+wget https://nexalinux.github.io/scripts/nlcs.py -O /tmp/nexa-prod/nlcs.py
+wget https://nexalinux.github.io/scripts/iso.py -O /tmp/nexa-prod/iso.py</code></pre>
 </doc-codeblock></div>
 <p>Remove <code v-pre>wget</code> HSTS rules:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -356,11 +380,11 @@ wget https://nexalinux.github.io/scripts/iso.sh -O /tmp/nexa-prod/iso.sh</code><
     </div>
 </div>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">/tmp/nexa-prod/nlcs.sh</code></pre>
+<pre class="language-bash"><code v-pre class="language-bash">python3 /tmp/nexa-prod/nlcs.py</code></pre>
 </doc-codeblock></div>
 <p>After that&#x27;s done, immediately run the ISO creator:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">/tmp/nexa-prod/iso.sh</code></pre>
+<pre class="language-bash"><code v-pre class="language-bash">python3 /tmp/nexa-prod/iso.py</code></pre>
 </doc-codeblock></div>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>

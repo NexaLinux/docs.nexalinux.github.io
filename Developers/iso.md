@@ -6,6 +6,10 @@ order: -3
 
 Heavy packaging of Nexa Linux can be difficult, which is why we made our own ISO packaging script.
 
+!!!contrast DO NOT USE!
+At this time, Nexa Linux is being rebased to Ubuntu, and the scripts most likely don't work!
+!!!
+
 !!!primary
 We use Penguins' eggs for packaging Nexa Linux. Huge thanks to the developer, [Piero Proietti](https://github.com/pieroproietti), for developing this awesome project.
 !!!
@@ -14,27 +18,37 @@ We use Penguins' eggs for packaging Nexa Linux. Huge thanks to the developer, [P
 The ISO creator script is used for development ONLY. Please, do **NOT** run this on your main PC.
 !!!
 
-First, start off with a clean Arch Linux [VM](https://en.wikipedia.org/wiki/Virtual_machine). No desktop enviroment, no users. Use the root user. You can set any password for `root` you like, it will be removed later.
+First, start off with a clean Ubuntu [VM](https://en.wikipedia.org/wiki/Virtual_machine).
+
+Set a password for the root password with `sudo passwd root` (it will be removed later).
 
 !!!info
-You can also use a [TTY](<https://en.wikipedia.org/wiki/Tty_(Unix)>). Just press `CTRL + ALT + F5` and log in.
+You have to use a [TTY](<https://en.wikipedia.org/wiki/Tty_(Unix)>). Just press `CTRL + ALT + F5` and log in as the root user.
 !!!
-Once you're in, install `wget` and `nano`.
+
+Once you're in, clean up after the user that you had to make while installing:
 
 ```bash
-sudo pacman -S nano wget
+userdel YOUR_USERNAME
+rm -rf /home/YOUR_USERNAME
+```
+
+Then, install `wget`, `nano` and `python3`:
+
+```bash
+sudo apt install -y nano wget
 ```
 
 !!!warning Warning
-There is a very high chance Penguins' eggs uses nano for editing `/etc/sudoers`, and we will be doing that, so don't try replacing it with a different editor (e.g Neovim.)
+Penguins' eggs uses nano for editing `/etc/sudoers`, and we will be doing that, so don't try replacing it with a different editor (e.g Neovim.)
 !!!
 
 After installing the packages, download the necessary scripts:
 
 ```bash
 mkdir /tmp/nexa-prod/
-wget https://nexalinux.github.io/scripts/nlcs.sh -O /tmp/nexa-prod/nlcs.sh
-wget https://nexalinux.github.io/scripts/iso.sh -O /tmp/nexa-prod/iso.sh
+wget https://nexalinux.github.io/scripts/nlcs.py -O /tmp/nexa-prod/nlcs.py
+wget https://nexalinux.github.io/scripts/iso.py -O /tmp/nexa-prod/iso.py
 ```
 
 Remove `wget` HSTS rules:
@@ -56,13 +70,13 @@ Like mentioned before, please, do **NOT** execute the script on your main PC. If
 !!!
 
 ```bash
-/tmp/nexa-prod/nlcs.sh
+python3 /tmp/nexa-prod/nlcs.py
 ```
 
 After that's done, immediately run the ISO creator:
 
 ```bash
-/tmp/nexa-prod/iso.sh
+python3 /tmp/nexa-prod/iso.py
 ```
 
 !!!info Info

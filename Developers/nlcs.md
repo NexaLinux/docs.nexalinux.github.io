@@ -5,6 +5,10 @@ icon: arrow-switch
 
 # Nexa Linux Conversion Script
 
+!!!contrast DO NOT USE!
+At this time, Nexa Linux is being rebased to Ubuntu, and the script most likely doesn't work!
+!!!
+
 The [Nexa Linux Conversion Script (NLCS)](https://github.com/NexaLinux/scripts) is used by developers, for better coding experience and easier ISO packaging. It is completely open-source, which means you can help us by making a [Pull Request](https://github.com/NexaLinux/scripts/pulls)!
 
 !!!danger Development only
@@ -21,34 +25,24 @@ For the script to work, you need to be running it in a [TTY](<https://en.wikiped
 
 ### Download and run
 
-To use NLCS, first you need to install `wget`:
+To use NLCS, first you need to install `wget` and `python3`:
 
 ```bash
-sudo pacman -S wget
+sudo apt install -y wget python3
 ```
 
 After that, you need to download the script:
 
 ```bash
-wget nexalinux.github.io/scripts/nlcs.sh
-```
-
-Then for the script to actually work, we need to make it executable:
-
-```bash
-chmod a+x nlcs.sh
+wget nexalinux.github.io/scripts/nlcs.py
 ```
 
 !!!warning
 The creators of this script are not responsible for any damages caused to your PC!
 !!!
 
-And finally, execute it:
+And now, execute it:
 
 ```bash
-./nlcs.sh
+python3 nlcs.py
 ```
-
-!!!info
-During the execution, you may be asked for your sudo password.
-!!!

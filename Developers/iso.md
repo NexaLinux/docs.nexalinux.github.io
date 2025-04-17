@@ -47,8 +47,8 @@ After installing the packages, download the necessary scripts:
 
 ```bash
 mkdir /tmp/nexa-prod/
-wget https://nexalinux.github.io/scripts/nlcs.py -O /tmp/nexa-prod/nlcs.py
-wget https://nexalinux.github.io/scripts/iso.py -O /tmp/nexa-prod/iso.py
+wget https://scripts.nexalinux.xyz/nlcs.py -O /tmp/nexa-prod/nlcs.py
+wget https://scripts.nexalinux.xyz/iso.py -O /tmp/nexa-prod/iso.py
 ```
 
 Remove `wget` HSTS rules:

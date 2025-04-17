@@ -36,7 +36,7 @@ rm -rf /home/YOUR_USERNAME
 Then, install `wget`, `nano` and `python3`:
 
 ```bash
-sudo apt install -y nano wget
+sudo apt install -y nano wget python3
 ```
 
 !!!warning Warning
@@ -55,12 +55,6 @@ Remove `wget` HSTS rules:
 
 ```bash
 rm ~/.wget-hsts
-```
-
-Make the scripts executable:
-
-```bash
-chmod +x /tmp/nexa-prod/*
 ```
 
 And now, execute `nlcs.sh` ([NLCS](https://docs.nexalinux.xyz/developers/nlcs/)):

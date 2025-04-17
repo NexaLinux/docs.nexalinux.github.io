@@ -34,7 +34,7 @@ sudo apt install -y wget python3
 After that, you need to download the script:
 
 ```bash
-wget nexalinux.github.io/scripts/nlcs.py
+wget https://scripts.nexalinux.xyz/nlcs.py
 ```
 
 !!!warning

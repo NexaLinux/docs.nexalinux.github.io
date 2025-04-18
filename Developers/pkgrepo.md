@@ -5,6 +5,10 @@ icon: package
 
 For easier installation, we made our own package repository that contains tools like [nexa-cmd](https://github.com/NexaLinux/nexa-cmd).
 
+!!!contrast
+The package repository doesn't currently work. Do NOT use it!
+!!!
+
 ## Usage
 
 You can use the repository, using `pacman` or `nexa apt` (included in [nexa-cmd](https://github.com/NexaLinux/nexa-cmd)).
